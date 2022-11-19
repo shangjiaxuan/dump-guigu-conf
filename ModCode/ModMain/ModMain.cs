@@ -105,7 +105,7 @@ namespace MOD_B4oPvp
 					System.IO.StreamWriter sw = new System.IO.StreamWriter(file, System.Text.Encoding.UTF8);
 					try
 					{
-						sw.Write(Il2CppNewtonsoft.Json.JsonConvert.SerializeObject(item.allConfBase));
+						sw.Write(Il2CppNewtonsoft.Json.JsonConvert.SerializeObject(item.allConfBase, Il2CppNewtonsoft.Json.Formatting.Indented));
 					}
 					catch (Exception ex)
 					{
